@@ -1,0 +1,6 @@
+// frontend/src/app/components/reembolso-form/reembolso-form.component.html
+<form (ngSubmit)="enviar()">
+  <input [(ngModel)]="reembolso.nome" name="nome" placeholder="Nome do Funcionário" required>
+  <input [(ngModel)]="reembolso.valor" name="valor" placeholder="Valor" required>
+  <button type="submit">Solicitar Reembolso</button>
+</form>
